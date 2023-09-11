@@ -1,8 +1,6 @@
 #pragma once
 
 #include <stdint.h>
-#include <stddef.h>
-#include <memory>
 
 
 typedef uint8_t u8;
