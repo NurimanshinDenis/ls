@@ -1,6 +1,6 @@
 #pragma once
 
-#include <ls_vm>
+#include <ls_vm.h>
 
 enum ShaderType{
     SHADER_SYMPLY,

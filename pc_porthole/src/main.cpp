@@ -3,11 +3,10 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-#include <ls_vm>
+#include <ls_vm.h>
 
 
 using namespace std;
-
 
 
 int main(){
@@ -16,7 +15,7 @@ int main(){
 
     LsVm ls;
 
-    ls.test();
+    cout << "ls.test(); " << ls.test() << endl;
     
     while(system->update()){
         this_thread::sleep_for(chrono::milliseconds(16));

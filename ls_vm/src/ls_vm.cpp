@@ -2,5 +2,5 @@
 
 
 i64 LsVm::test(){
-  return 0;
+  return 12345;
 }
