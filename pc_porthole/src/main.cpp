@@ -14,10 +14,9 @@ int main(){
     System* system = new System();
 
     LsVm ls;
-
-    cout << "ls.test(); " << ls.test() << endl;
     
     while(system->update()){
+        ls.update();
         this_thread::sleep_for(chrono::milliseconds(16));
     }
 

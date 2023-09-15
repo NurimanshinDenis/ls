@@ -16,14 +16,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Example of a call to a native method
-        binding.sampleText.text = stringFromJNI()
+        binding.sampleText.text = lsVmUpdateJNI()
     }
+
+
 
     /**
      * A native method that is implemented by the 'porthole' native library,
      * which is packaged with this application.
      */
-    external fun stringFromJNI(): String
+    external fun lsVmUpdateJNI(): String
 
     companion object {
         // Used to load the 'porthole' library on application startup.
