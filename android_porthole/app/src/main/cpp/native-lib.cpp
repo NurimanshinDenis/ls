@@ -3,13 +3,13 @@
 
 #include <ls_vm.h>
 
-extern "C" JNIEXPORT jstring JNICALL
-Java_com_ls_porthole_MainActivity_stringFromJNI(
-        JNIEnv* env,
-        jobject /* this */) {
-    LsVm ls;
+LsVm ls;
 
-    std::string hello = "Hello from C++ " + std::to_string(ls.test());
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_ls_porthole_MainActivity_lsVmUpdateJNI(JNIEnv *env, jobject thiz) {
+    std::string hello = "Hello from C++ " + std::to_string(ls.update());
 
     return env->NewStringUTF(hello.c_str());
 }

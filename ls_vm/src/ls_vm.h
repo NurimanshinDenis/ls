@@ -1,8 +1,14 @@
 #pragma once
 
-#include "types.h"
+#include "vm/types.h"
+
+
+
+
 
 class LsVm{
+private:
+  static void init();
 public:
-  i64 test();
+  i64 update();
 };
